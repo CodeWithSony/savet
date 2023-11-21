@@ -6,17 +6,18 @@ import userRoute from './routes/userRouter.js'
 
 const app = express();
 dotenv.config();
+app.use(express.json({ limit: "30mb", extended: true }));
+app.use(express.urlencoded({ limit: "30mb", extended: true }));
 const corsOptions = {
   // origin: 'http://localhost:3000',
   Credential: true,
   // optionSuccessStatus: 200
 };
 
-app.use(cors(corsOptions));
+app.use(cors());
 app.use("/user", userRoute)
 
-app.use(express.json({ limit: "30mb", extended: true }));
-app.use(express.urlencoded({ limit: "30mb", extended: true }));
+
 
 const PORT = Number(process.env.PORT) || 6000;
 
