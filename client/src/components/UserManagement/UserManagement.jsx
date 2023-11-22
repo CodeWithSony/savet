@@ -1,14 +1,14 @@
 import React from "react";
 import LeftSidebar from "../../pages/DashBoared/LeftSidebar";
 import MainBar from "../../pages/DashBoared/MainBar";
-// 1
+
 const UserManagement = () => {
   return (
-    <div className="flex w-12/12  bg-sky-400 h-screen gap-x-6 mt-[2rem]">
+    <div className="flex w-12/12  bg-white h-screen gap-x-6 mt-[2rem]">
       <LeftSidebar />
-      <div className="flex flex-col w-full bg-green-800 justify-around items-center h-screen">
-        <div className="flex w-full flex-col bg-black text-white items-center m">
-          <h2>User</h2>
+      <div className="flex flex-col w-full bg-violet-400 items-center justify-center">
+        <div className="flex w-full flex-col bg-black text-white items-center justify-start min-h-screen pt-5">
+          <h2 className="m-[2rem]">User</h2>
 
           <div className="flex w-3/4 justify-between items-center flex-col">
             <div className="flex w-3/4 justify-between items-center">
@@ -52,8 +52,8 @@ const UserManagement = () => {
                 <td colSpan={4}>sony2343@gmail.com</td>
                 <td>Active</td>
                 <td>Block</td>
-                <td>
-                  <span className="w-[2rem] bg-red-500"> <ion-icon name="trash-outline"></ion-icon></span>
+                <td className="flex justify-start items-center">
+                  <span className=" bg-red-500 p-1 w-8 h-7 flex justify-center items-center"> <ion-icon name="trash-outline"></ion-icon></span>
                  </td>
               </tr>
             </table>

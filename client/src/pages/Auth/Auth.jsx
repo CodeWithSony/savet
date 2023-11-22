@@ -27,6 +27,7 @@ const Auth = () => {
     if (!email && !password) {
       alert("Enter email and password...");
     }
+ 
     if (isSignUp) {
       if (!name) {
         alert("Enter a name...");
@@ -38,6 +39,7 @@ const Auth = () => {
     } else {
       dispatch(login({ email, password }, navigate));
     }
+    
   };
 
   return (

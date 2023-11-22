@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 const LeftSidebar = () => {
   return (
     <div className='flex flex-col w-1/5'>
-      <ul className='flex flex-col bg-green-800 pt-8 text-white w-full' >
+      <ul className='flex flex-col bg-violet-400 pt-8 text-white w-full' >
       <li className='m-4'> <Link to="" className='p-2 text-white font-extrabold	text-4xl  ui-monospace'>Let's Go</Link> </li>
       <li className='m-4 hover:bg-green-400 p-2 pl-0'> <Link to="/Dashboard">Dashboard</Link> </li>
         <li className='m-4 hover:bg-green-400 p-2 pl-0'> <Link to="/UserManagement">User Management</Link> </li>

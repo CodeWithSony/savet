@@ -10,7 +10,9 @@ export const signup = (authdata, navigate) => async (dispatch) => {
     // after loging in or signin in we can see our avatar one time only but after refreshing it's gone. because we are using dispatch function one time only. so we will use useEffect in order to prevent it. and whenever the navbar will be visible our avatar will also visbile as side effect of useEffect.
     navigate("/");
   } catch (error) {
+    alert(error.response.data.message)
     console.log(error);
+
   }
 };
 
