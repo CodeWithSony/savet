@@ -6,4 +6,19 @@ export default {
   },
   plugins: [],
   // purge: [],
+  theme: {
+    screens: {
+      // 'phone': '280px',
+      // 'tablet': '640px',
+      // => @media (min-width: 640px) { ... }
+
+      // 'laptop': '1024px',
+      // => @media (min-width: 1024px) { ... }
+
+      'phonee': '400px',
+      // => @media (min-width: 1280px) { ... }
+
+      'laptop': '750px'
+    },
+  }
 };

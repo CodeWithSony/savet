@@ -8,7 +8,7 @@ const Navbar = () => {
   const user = null;
   return (
     <nav className="flex w-full flex-wrap items-center justify-center px-3 bg-black sticky top-0 left-0">
-      <div className="w-4/5 items-center justify-between flex my-3">
+      <div className="w-4/5 items-center justify-between flex  bg-black text-white flex-wrap my-3 laptop:flex-nowrap">
         <div className="flex justify-between w-full items-center">
         
           <Link to="/" className="nav-logo nav-item">
@@ -31,7 +31,7 @@ const Navbar = () => {
         </div>
 
 
-        <div className="flex justify-around w-full text-lg font-semibold text-white">
+        <div className="flex justify-between w-full text-lg font-semibold text-white">
           <MyAccount />
           <Link to="/">Products</Link>
           {user === null ? (
