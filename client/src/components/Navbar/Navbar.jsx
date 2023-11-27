@@ -7,9 +7,9 @@ import MyAccount from "../../pages/MyAccount";
 const Navbar = () => {
   const user = null;
   return (
-    <nav className="flex w-full flex-wrap items-center justify-center px-3 bg-black sticky top-0 left-0">
-      <div className="w-4/5 items-center justify-between flex  bg-black text-white flex-wrap my-3 laptop:flex-nowrap">
-        <div className="flex justify-between w-full items-center">
+    <nav className="flex w-full flex-wrap items-center justify-center  bg-black sticky top-0 left-0">
+      <div className="w-4/5 items-center justify-around flex  bg-black text-white flex-wrap my-3 laptop:flex-nowrap phone:w-screen:justify-between">
+        <div className="flex justify-around w-full items-center">
         
           <Link to="/" className="nav-logo nav-item">
           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQsqSia8VMaIdlL0SKFjybBrvA2k0vGVAM77kXH6siLK2xVtxMXX6hGPO1TAA7hIIjAjY&usqp=CAU" alt="logo" className="w-24 border-4 border-green-500 rounded-9 rounded-md shadow shadow-green-500/40 hover:shadow-green-200/40"/>
@@ -31,9 +31,9 @@ const Navbar = () => {
         </div>
 
 
-        <div className="flex justify-between w-full text-lg font-semibold text-white">
+        <div className="flex justify-around w-full text-lg font-semibold text-white">
           <MyAccount />
-          <Link to="/">Products</Link>
+          <Link to="/Products">Products</Link>
           {user === null ? (
             <Link
               to="/Auth"
@@ -48,7 +48,7 @@ const Navbar = () => {
           )}
 <span className="flex flex-col justify-center items-center">
 
-          <img src={cart} alt="cart" className="h-6 bg-white" />
+          <img src={cart} alt="cart" className="h-6 bg-green-200" />
 </span>
     
         </div>

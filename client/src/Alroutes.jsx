@@ -1,7 +1,9 @@
 import React from 'react'
+
 import { Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
 import DashBoared from './pages/DashBoared/DashBoared'
+import Products from './pages/Products/Products'
 import Auth from './pages/Auth/Auth'
 import UserManagement from './components/UserManagement/UserManagement'
 
@@ -11,6 +13,8 @@ const Alroutes = () => {
     <Routes>
     {/* <Route path="/" element={<Home/>} /> */}
           <Route path="/" element={<DashBoared/>} />
+          <Route path="/Products" element={<Products/>} />
+          {/* <R path='/Products'></R/> */}
           <Route path="/Auth" element={<Auth/>} />
           <Route path="/UserManagement" element={<UserManagement/>} />
     </Routes>

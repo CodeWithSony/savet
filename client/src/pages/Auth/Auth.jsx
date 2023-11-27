@@ -44,36 +44,28 @@ const Auth = () => {
 
   return (
     <section className="min-h-screen bg-gray-100 flex justify-center items-center">
-      <div className="flex justify-center items-center bg-green-400 rounded-lg">
+      <div className="flex justify-center h-[30rem] items-center rounded-lg">
         {isSignUp && (
           <img
             src={tara}
             alt="overflow"
-            className="h-[40rem] border-4 border-green-500 rounded-9 rounded-md  shadow-green-500/40 shadow-md hover:shadow-green-200/40"
+            className="h-[33rem] border-4 border-green-500 rounded-9 rounded-md  shadow-green-500/40 shadow-md hover:shadow-green-200/40"
           />
         )}
         {/* {isSignUp && <AboutAuth />} */}
         <div className="w-[28rem] flex flex-col justify-between items-center">
-          {/* auth-container */}
-          {/* need to bring it */}
-          {/* {isSignUp && (
-          <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQsqSia8VMaIdlL0SKFjybBrvA2k0vGVAM77kXH6siLK2xVtxMXX6hGPO1TAA7hIIjAjY&usqp=CAU"
-            alt="overflow"
-            className="w-[6rem] border-4 border-green-500 rounded-9 rounded-md  shadow-green-500/40 shadow-md hover:shadow-green-200/40"
-          />
-        )} */}
+      
           <form
             onSubmit={handlerSubmit}
-            className="flex flex-col p-5 bg-white rounded-lg w-full justify-center shadow-md"
+            className="flex flex-col border border-green-400 rounded-lg w-full justify-center items-center shadow-md"
           >
             {isSignUp && (
-              <label htmlFor="name">
+              <label className="w-4/5" htmlFor="name">
                 <h4 className="mb-5 mt-10">Display Name</h4>
                 <input
                   type="text"
                   // className="p-2 w-[calc(100%-30px)] border border-gray-300 text-sm"
-                  className="p-4 w-full border border-opacity-30 text-sm"
+                  className="w-full border border-opacity-30 text-sm py-2"
                   id="name"
                   name="name"
                   onChange={(e) => {
@@ -82,19 +74,20 @@ const Auth = () => {
                 />
               </label>
             )}
-            <label htmlFor="email">
+            
+            <label className="w-4/5" htmlFor="email">
               <h4 className="mb-5 mt-10">Email</h4>
               <input
                 type="email"
                 name="name"
-                className="p-4 w-full border border-opacity-30 text-sm"
+                className="w-full border border-opacity-30 text-sm py-2"
                 id="username"
                 onChange={(e) => {
                   setEmail(e.target.value);
                 }}
               />
             </label>
-            <label htmlFor="password">
+            <label className="w-4/5" htmlFor="password">
               <div style={{ display: "flex", justifyContent: "space-between" }}>
                 <h4 className="mb-5 mt-10">Password</h4>
                 {!isSignUp && (
@@ -106,7 +99,7 @@ const Auth = () => {
               <input
                 type="password"
                 name="password"
-                className="p-4 w-full border border-opacity-30 text-sm"
+                className="w-full border border-opacity-30 text-sm py-2"
                 id="password"
                 onChange={(e) => {
                   setPassword(e.target.value);
@@ -116,7 +109,7 @@ const Auth = () => {
 
             <button
               type="submit"
-              className="mt-4 px-2 py-2  bg-green-400 border border-green-500 text-white rounded-md cursor-pointer transition duration-200 text-sm font-extrabold	"
+              className="w-4/5 mt-4 px-2 py-2  bg-green-400 border border-green-500 text-white rounded-md cursor-pointer transition duration-200 text-sm font-extrabold	"
             >
               {isSignUp ? "Sign up" : "Log in"}
             </button>
@@ -131,7 +124,8 @@ const Auth = () => {
                 <span style={{ color: "#007ac6" }}>cookie policy.</span>
               </p>
             )}
-          </form>
+
+
           <p>
             {isSignUp ? "already have an account" : "Don't have an account  "}
             <button
@@ -143,6 +137,7 @@ const Auth = () => {
               {isSignUp ? "Log in" : "Sign up"}
             </button>
           </p>
+          </form>
         </div>
       </div>
     </section>
