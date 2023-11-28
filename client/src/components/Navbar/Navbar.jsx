@@ -48,7 +48,7 @@ const Navbar = () => {
           )}
 <span className="flex flex-col justify-center items-center">
 
-          <img src={cart} alt="cart" className="h-6 bg-green-200" />
+          <img src={cart} alt="cart" className="h-9 bg-green-200 rounded " />
 </span>
     
         </div>
