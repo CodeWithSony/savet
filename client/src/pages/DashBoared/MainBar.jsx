@@ -4,13 +4,14 @@ import BoxComponent from "../../components/BoxComponent";
 import tara from "../../assets/tara.jpeg";
 
 const MainBar = () => {
-  return (<>
-   {/* <LeftSidebar/> */}
-    <div className="flex flex-col w-full bg-green-800 text-white">
-    
-    </div>
-  </>
-   
+  return (
+    <>
+      {/* <LeftSidebar/> */}
+      <div className="flex flex-col w-full bg-green-800 text-white">
+      
+       
+      </div>
+    </>
   );
 };
 
